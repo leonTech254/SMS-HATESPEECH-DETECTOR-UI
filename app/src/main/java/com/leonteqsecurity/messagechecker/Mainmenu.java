@@ -17,7 +17,7 @@ public class Mainmenu extends AppCompatActivity {
             getSupportActionBar().hide();
         }
     }
-    
+
     public  void toScan(View view)
     {
         Intent intent = new Intent(this,ScanMessages.class);
