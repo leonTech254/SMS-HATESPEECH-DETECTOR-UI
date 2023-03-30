@@ -2,7 +2,9 @@ package com.leonteqsecurity.messagechecker;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 
 public class Mainmenu extends AppCompatActivity {
 
@@ -14,5 +16,11 @@ public class Mainmenu extends AppCompatActivity {
         {
             getSupportActionBar().hide();
         }
+    }
+    
+    public  void toScan(View view)
+    {
+        Intent intent = new Intent(this,ScanMessages.class);
+        startActivity(intent);
     }
 }
